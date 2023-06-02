@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="16dp">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_person_24"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textfirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nom_card"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/textlastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pr_nom_card"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/textphoneMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_card"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_card"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="97dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textadresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adresse"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="134dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/baseline_delete_outline_24"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="74dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

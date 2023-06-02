@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/thumbnailIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_person_24"
+        android:background="@color/ghost_blue"
+        />
+
+    <EditText
+        android:id="@+id/firstNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnailIv"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/pr_nom"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/lastNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameEt"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/nom"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/phoneMobileEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameEt"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:hint="@string/num_ro_t_l_phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneMobileEt"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/adressEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEt"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/adresse"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/viewlist"
+        android:layout_width="211dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_view_list_24"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_blue"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_done_24" />
+
+</RelativeLayout>

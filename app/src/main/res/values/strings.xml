@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ServiceContact</string>
+    <string name="contact_urgence">Contact urgence</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="num_ro_t_l_phone">Numéro téléphone</string>
+    <string name="email">Email</string>
+    <string name="adresse">Adresse</string>
+    <string name="nom_card">Nom</string>
+    <string name="pr_nom_card">Prénom</string>
+    <string name="num_card">num</string>
+    <string name="email_card">email</string>
+</resources>
